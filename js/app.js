@@ -4,6 +4,10 @@ window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function confirm(string, target) {
+		if (string === "" || target === "") {
+			return display("???");
+		}
+
 		let ending = string.slice(-1 - (target.length - 1));
 
 		if (ending === target) {
@@ -16,7 +20,9 @@ window.onload = function(event) {
 	function display(result) {
 		let display = document.getElementById("display");
 
-		if (result) {
+		if (result === "???") {
+			display.textContent = "???";
+		} else if (result) {
 			display.textContent = "true";
 		} else {
 			display.textContent = "false";
