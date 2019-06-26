@@ -51,11 +51,11 @@ main {
 }
 
 .display-false {
-	color: red;
+	color: black;
 }
 
 .display-true {
-	color blue;
+	color: royalblue;
 }
 
 .display-unknown {
