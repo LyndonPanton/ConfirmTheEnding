@@ -28,7 +28,60 @@ header {
 
 
 /* MAIN */
+input[type="text"] {
+	display: block;
+	margin: 2vh auto;
+	border: none;
+	border-bottom: 1px #747474 solid;
+	min-width: 40%;
+	background-color: transparent;
+	text-align: center;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 1em;
+	color: white;
+}
 
+input[type="text"]::placeholder {
+	opacity: 0.6;
+	color: white;
+}
+
+main {
+	padding: 10vh 0;
+}
+
+.display-false {
+	color: red;
+}
+
+.display-true {
+	color blue;
+}
+
+.display-unknown {
+	color: white;
+}
+
+#form-submit {
+	border: 2px #747474 solid;
+	border-radius: 5px;
+	padding: 1vh 4vw;
+	background-color: #01A6F0;
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-size: 1em;
+	color: white;
+}
+
+#form-submit:active {
+	border-color: #01A6F0;
+	background-color: #F34F1C;
+}
+
+#display {
+	display: block;
+	margin: 2vh 40vw 0;
+	border-bottom: 1px #FFBA01 solid;
+}
 
 
 /* FOOTER */
