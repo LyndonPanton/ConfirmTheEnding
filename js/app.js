@@ -4,12 +4,22 @@ window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function confirm(string, target) {
-		let ending = str.slice(-1 - (target.length - 1));
+		let ending = string.slice(-1 - (target.length - 1));
 
 		if (ending === target) {
-			return true;
+			return display(true);
 		} else {
-			return false;
+			return display(false);
+		}
+	}
+
+	function display(result) {
+		let display = document.getElementById("display");
+
+		if (result) {
+			display.textContent = "true";
+		} else {
+			display.textContent = "false";
 		}
 	}
 
