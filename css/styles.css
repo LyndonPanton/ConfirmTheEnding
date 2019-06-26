@@ -13,3 +13,22 @@ body, html {
 	font-size: 16px;
 	color: white;
 }
+
+
+/* HEADER */
+h1 {
+	margin: 0;
+	padding: 1vh 0;
+}
+
+header {
+	background-color: #FFBA01;
+	color: white;
+}
+
+
+/* MAIN */
+
+
+
+/* FOOTER */
